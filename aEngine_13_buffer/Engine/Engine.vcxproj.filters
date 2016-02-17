@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="engine">
+      <UniqueIdentifier>{71e1df9b-9e20-414b-a179-b302c4c581ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\BUG">
+      <UniqueIdentifier>{1c647d05-9d6e-4766-acdf-e8c80a5686e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game">
+      <UniqueIdentifier>{5f3a6af4-0d9b-4f49-848a-54503c4fb2b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\1.headers">
+      <UniqueIdentifier>{0a3f9396-dcb4-4096-8e70-8c6b14013a90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\3.core">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="engine\4.core_d3d9">
+      <UniqueIdentifier>{d65eb01f-4743-48ef-a1e7-aaba025bce9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\5.component">
+      <UniqueIdentifier>{27d631f4-ef2d-4ff9-aba6-c8d4a7c76f8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\6.frame">
+      <UniqueIdentifier>{54f97446-8c28-4091-887e-005a1333b54e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\6.frame\shader">
+      <UniqueIdentifier>{af5b6402-0136-458b-9999-61de27d31973}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\2.util">
+      <UniqueIdentifier>{1e81188c-6be3-4f40-a2c0-bf036ad77644}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\2.util\pattern">
+      <UniqueIdentifier>{ec065079-d1e5-445f-9e04-406e0c0bad2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\2.util\math">
+      <UniqueIdentifier>{7c0e1410-6cf5-4394-b9a8-dcf2c8f14a2e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Window.h">
+      <Filter>engine\3.core</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>engine\3.core</Filter>
+    </ClInclude>
+    <ClInclude Include="Bug.h">
+      <Filter>engine\BUG</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>engine\3.core</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>engine\6.frame\shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Vertex.h">
+      <Filter>engine\3.core</Filter>
+    </ClInclude>
+    <ClInclude Include="d3d9RenderingEngine.h">
+      <Filter>engine\4.core_d3d9</Filter>
+    </ClInclude>
+    <ClInclude Include="d3d9Texture.h">
+      <Filter>engine\4.core_d3d9</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>engine\3.core</Filter>
+    </ClInclude>
+    <ClInclude Include="d3d9Mappings.h">
+      <Filter>engine\4.core_d3d9</Filter>
+    </ClInclude>
+    <ClInclude Include="d3d9TextureManager.h">
+      <Filter>engine\4.core_d3d9</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureManager.h">
+      <Filter>engine\3.core</Filter>
+    </ClInclude>
+    <ClInclude Include="inputsystem.h">
+      <Filter>engine\4.core_d3d9</Filter>
+    </ClInclude>
+    <ClInclude Include="d3d9VertexBuffer.h">
+      <Filter>engine\4.core_d3d9</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexBuffer.h">
+      <Filter>engine\3.core</Filter>
+    </ClInclude>
+    <ClInclude Include="prequest.h">
+      <Filter>engine\1.headers</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreHeaders.h">
+      <Filter>engine\1.headers</Filter>
+    </ClInclude>
+    <ClInclude Include="d3d9Headers.h">
+      <Filter>engine\1.headers</Filter>
+    </ClInclude>
+    <ClInclude Include="OBJmesh.h">
+      <Filter>engine\3.core</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>engine\3.core</Filter>
+    </ClInclude>
+    <ClInclude Include="camera.h">
+      <Filter>engine\5.component</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>engine\5.component</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform.h">
+      <Filter>engine\3.core</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderingEngine.h">
+      <Filter>engine\6.frame</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
+      <Filter>engine\6.frame</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>engine\6.frame</Filter>
+    </ClInclude>
+    <ClInclude Include="lighting.h">
+      <Filter>engine\6.frame</Filter>
+    </ClInclude>
+    <ClInclude Include="util.h">
+      <Filter>engine\2.util</Filter>
+    </ClInclude>
+    <ClInclude Include="Factory.h">
+      <Filter>engine\2.util\pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="Singleton.h">
+      <Filter>engine\2.util\pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="math3d.h">
+      <Filter>engine\2.util\math</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>engine\5.component</Filter>
+    </ClInclude>
+    <ClInclude Include="billboard.h">
+      <Filter>engine\5.component</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="Bug.cpp">
+      <Filter>engine\BUG</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>engine\6.frame\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="d3d9RenderingEngine.cpp">
+      <Filter>engine\4.core_d3d9</Filter>
+    </ClCompile>
+    <ClCompile Include="d3d9Texture.cpp">
+      <Filter>engine\4.core_d3d9</Filter>
+    </ClCompile>
+    <ClCompile Include="d3d9TextureManager.cpp">
+      <Filter>engine\4.core_d3d9</Filter>
+    </ClCompile>
+    <ClCompile Include="inputsystem.cpp">
+      <Filter>engine\4.core_d3d9</Filter>
+    </ClCompile>
+    <ClCompile Include="d3d9VertexBuffer.cpp">
+      <Filter>engine\4.core_d3d9</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureManager.cpp">
+      <Filter>engine\3.core</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>engine\3.core</Filter>
+    </ClCompile>
+    <ClCompile Include="camera.cpp">
+      <Filter>engine\5.component</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>engine\5.component</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine.cpp">
+      <Filter>engine\5.component</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderingEngine.cpp">
+      <Filter>engine\6.frame</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>engine\6.frame</Filter>
+    </ClCompile>
+    <ClCompile Include="lighting.cpp">
+      <Filter>engine\6.frame</Filter>
+    </ClCompile>
+    <ClCompile Include="math3d.cpp">
+      <Filter>engine\2.util\math</Filter>
+    </ClCompile>
+    <ClCompile Include="billboard.cpp">
+      <Filter>engine\5.component</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="out.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+    <Text Include="bug.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+    <Text Include="in.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PointLight-effect.hlsl">
+      <Filter>engine\6.frame\shader</Filter>
+    </None>
+    <None Include="DirectionLight-effect.hlsl">
+      <Filter>engine\6.frame\shader</Filter>
+    </None>
+    <None Include="MultiLight.hlsl">
+      <Filter>engine\6.frame\shader</Filter>
+    </None>
+    <None Include="normalMapping.hlsl">
+      <Filter>engine\6.frame\shader</Filter>
+    </None>
+    <None Include="Parallax.hlsl">
+      <Filter>engine\6.frame\shader</Filter>
+    </None>
+    <None Include="shadowMap.hlsl">
+      <Filter>engine\6.frame\shader</Filter>
+    </None>
+    <None Include="defaultShader.hlsl">
+      <Filter>engine\6.frame\shader</Filter>
+    </None>
+    <None Include="Transparent.hlsl">
+      <Filter>engine\6.frame\shader</Filter>
+    </None>
+    <None Include="filter-fxaa.hlsl">
+      <Filter>engine\6.frame\shader</Filter>
+    </None>
+    <None Include="defered.hlsl">
+      <Filter>engine\6.frame\shader</Filter>
+    </None>
+    <None Include="SphereMap.hlsl">
+      <Filter>engine\6.frame\shader</Filter>
+    </None>
+    <None Include="Sky.hlsl">
+      <Filter>engine\6.frame\shader</Filter>
+    </None>
+    <None Include="BillboardBloom.hlsl">
+      <Filter>engine\6.frame\shader</Filter>
+    </None>
+    <None Include="filter-gaussBlur.hlsl">
+      <Filter>engine\6.frame\shader</Filter>
+    </None>
+  </ItemGroup>
+</Project>
