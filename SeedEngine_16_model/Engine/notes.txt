@@ -1,0 +1,25 @@
+
+@
+Texture* d3d9Texture::createFromFile(const string &file)
+	{
+
+		if (FAILED(
+			D3DXCreateTextureFromFile(device, file.c_str(), &mTexture)
+			))
+			throw("d3d9Texture::createFromFile -- error");
+		D3DSURFACE_DESC desc;
+		mTexture-> GetLevelDesc(0, &desc);
+		mWidth = desc.Width;
+		mHeight = desc.Height;
+		mMip = 0;
+		mFmt = PF_A8R8G8B8;								// wait to fix!!!!  mappingûд
+
+
+		return this;
+	}
+
+
+
+	@
+	MaterialManager 等待修改
+	 

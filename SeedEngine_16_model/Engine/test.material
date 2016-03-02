@@ -1,0 +1,16 @@
+
+
+material test
+{
+	pro_vertex test.hlsl vsmain vs_3_0
+	pro_pixel test.hlsl psmain ps_3_0
+	
+	texture 
+	{
+		tex_color picture/bricks2.jpg 512 512 PF_A8R8G8B8 0
+	}
+	texture 
+	{
+		tex_normal picture/bricks2_normal.jpg 512 512 PF_A8R8G8B8 0
+	}
+}

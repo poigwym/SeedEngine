@@ -1,0 +1,9 @@
+
+
+material rendershadow
+{
+	pro_vertex castshadow.hlsl vsmain vs_3_0
+	pro_pixel castshadow.hlsl psmain ps_3_0
+
+	rt0 512 512 PF_R32
+}
