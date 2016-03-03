@@ -1,0 +1,37 @@
+
+@
+Texture* d3d9Texture::createFromFile(const string &file)
+	{
+
+		if (FAILED(
+			D3DXCreateTextureFromFile(device, file.c_str(), &mTexture)
+			))
+			throw("d3d9Texture::createFromFile -- error");
+		D3DSURFACE_DESC desc;
+		mTexture-> GetLevelDesc(0, &desc);
+		mWidth = desc.Width;
+		mHeight = desc.Height;
+		mMip = 0;
+		mFmt = PF_A8R8G8B8;								// wait to fix!!!!  mappingûд
+
+
+		return this;
+	}
+
+
+
+	@
+	MaterialManager 等待修改
+	 
+
+
+	@
+	dx9 的可编程顶点貌似不支持int， 但hlsl输入有int 没short
+	d3d9Vertex.cpp :: d3d9VertexDeclaration::getDeclaration() ---
+
+	case VET_INT: D3Dtype = D3DDECLTYPE_FLOAT1; s = sizeof(int); break;
+	case VET_INT2: D3Dtype = D3DDECLTYPE_FLOAT2; s = 2 * sizeof(int); break;
+	case VET_INT3: D3Dtype = D3DDECLTYPE_FLOAT3; s = 3 * sizeof(int); break;
+	case VET_INT4: D3Dtype = D3DDECLTYPE_FLOAT4; s = 4 * sizeof(int); break;
+
+	和int有关的都写成了float

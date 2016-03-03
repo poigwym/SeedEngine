@@ -1,0 +1,14 @@
+
+
+material aa
+{
+	pro_vertex skeleton.hlsl vsmain vs_3_0
+	pro_pixel skeleton.hlsl psmain ps_3_0
+	
+	texture 
+	{
+		tex_color picture/bricks2.jpg 512 512 PF_A8R8G8B8 0
+	}
+}
+
+
